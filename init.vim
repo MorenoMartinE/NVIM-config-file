@@ -30,6 +30,13 @@ endfunction
 
 :set splitright
 
+:set spelllang=es
+
+
+
+
+noremap <leader>s :GrammarousCheck --lang=es<CR>
+noremap <leader>a :GrammarousReset
 
 
 " Llama a la funcion de inicio personal
@@ -41,7 +48,7 @@ call plug#begin()
 	Plug 'https://github.com/Omnisharp/omnisharp-vim'
 	Plug 'https://github.com/sheerun/vim-polyglot'
         Plug 'https://github.com/SirVer/ultisnips.git'
-        
+        Plug 'rhysd/vim-grammarous' 
 
 	Plug 'nickspoons/vim-sharpenup'
 	Plug 'dense-analysis/ale'
